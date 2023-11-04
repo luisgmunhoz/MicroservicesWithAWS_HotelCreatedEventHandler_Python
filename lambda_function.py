@@ -55,3 +55,4 @@ def handler(event: Dict[str, Any], context: Dict[str, Any]) -> None:
         )
     except Exception as e:
         logger.error(f"An error occurred: {e}")
+        raise e
